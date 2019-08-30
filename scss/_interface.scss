@@ -1,0 +1,29 @@
+body {
+    @include regular;
+    color: $text-color;
+}
+
+.button-o {
+    text-transform: uppercase;
+    border: 2px solid $primary;
+    padding: 17px 22px;
+    font-size: 12px;
+    @include bold;
+    color: $primary;
+    background-color: white;
+    -webkit-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+    -moz-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+    box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.5);
+}
+
+.button {
+    text-transform: uppercase;
+    padding: 25px 45px;
+    border: none;
+    background-color: $primary;
+    color: white;
+    @include bold;
+    -webkit-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+    -moz-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+    box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.5);
+}

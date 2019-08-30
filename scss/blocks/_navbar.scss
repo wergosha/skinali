@@ -1,0 +1,95 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    &-wrap {
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__mobile, &__landline {
+        text-align: right;
+    }
+    &__phone {
+        display: block; 
+        font-size: 19px;
+        @include bold;
+        text-decoration: none;
+        color: $text-color;
+        margin-bottom: 5px;
+    }
+    &__small-text {
+        display: block;
+        font-size: 14px;
+        color: $text-color-light;
+        text-decoration: none;
+    }
+}
+
+.menu {
+    z-index: 0;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    padding: 16px 0;
+    background-color: $primary;
+    transform: translateY(-100%);
+    transition: 0.2s;
+    &_active {
+      transform: translateY(0);  
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: white;
+    }
+    &-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        border-right: 1px solid rgba($color: #510bba, $alpha: 0.1);
+        border-left: 1px solid rgba($color: #510bba, $alpha: 0.1);
+        height: 80px;
+        width: 70px;
+        &__line {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #89a9eb;
+            margin: 2px 0;
+
+        }
+    }
+}
+
+.logo {
+    &-text {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 18px;
+        text-transform: uppercase;
+        @include bold;
+    }
+    &-description {
+        display: block;
+        font-size: 14px;
+        color: $text-color-light;
+
+    }
+}
+
+

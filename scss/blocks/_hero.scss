@@ -1,0 +1,27 @@
+.hero {
+    background: #f1f1f1 url('../../img/hero-bg.jpg') no-repeat center right;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 270px;
+    &__title {
+        font-size: 30px;
+        @include light;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        width: 25%;
+        -webkit-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+        -moz-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+        box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.5);
+    }
+    &__subtitle {
+        display: block;
+        font-size: 30px;
+        @include bold;
+        margin-bottom: 67px;
+        background-color: #ffffff;
+        width: 25%;
+        -webkit-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+        -moz-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
+        box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.5);
+    }
+}
