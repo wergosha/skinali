@@ -28,8 +28,41 @@ body {
     box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.5);
 }
 
+.bg-secondary {
+    background-color: $bg-secondary;
+}
+
+.input {
+    height: 80px;
+    padding-left: 30px;
+    border: 1px solid #dddddd;
+    width: 100%;
+}
+
+.checkbox {
+    display: none;
+    &:checked + label:before {
+            background-color: $primary;
+        }
+    &-label {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        margin-right: 40px;
+        &:before {
+            content: '';
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            border: 1px solid #dddddd;
+            margin-right: 20px;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .button-o {
         font-size: 10px;
     }
 }
+
