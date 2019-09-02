@@ -370,11 +370,18 @@ body {
 .form__button {
   height: 80px;
   width: 100%;
+  padding: 25px 20px;
 }
 
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -100px;
+  }
+}
+
+@media (max-width: 990px) {
+  .offer-block {
+    background-position: center right -200px;
   }
 }
 
