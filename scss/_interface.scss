@@ -2,6 +2,11 @@ body {
     @include regular;
     color: $text-color;
 }
+
+img {
+    max-width: 100%;
+}
+
 .section {
     padding: 100px 0px;
     &-title {
@@ -29,6 +34,7 @@ body {
 }
 
 .button {
+    text-decoration: none;
     text-transform: uppercase;
     padding: 25px 45px;
     border: none;
@@ -38,7 +44,24 @@ body {
     -webkit-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
     -moz-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
     box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.5);
+    &-fitting {
+        color: $primary;
+        background-color: #fff;
+    }
+    &-add {
+        background-color: lighten($primary, 10%);
+        color: #ffffff;
+    }
+    &-like {
+        background-color: $primary;
+        height: 30px;
+        border: none;
+        width: 30px;
+        padding-top: 7px;
+    }
 }
+
+
 
 .bg-secondary {
     background-color: $bg-secondary;
