@@ -2,6 +2,18 @@ body {
     @include regular;
     color: $text-color;
 }
+.section {
+    padding: 100px 0px;
+    &-title {
+        font-size: 30px;
+        text-align: center;
+        @include bold;
+        text-transform: uppercase;
+    }
+    &__title {
+        margin-bottom: 100px;
+    }
+}
 
 .button-o {
     text-transform: uppercase;
@@ -63,6 +75,12 @@ body {
 @media (max-width: 576px) {
     .button-o {
         font-size: 10px;
+    }
+    .section {
+        padding: 60px 0;
+        &-title {
+            font-size: 24px;
+        }
     }
 }
 
