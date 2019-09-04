@@ -79,6 +79,7 @@ img {
   text-transform: uppercase;
   border: 2px solid #507fe1;
   padding: 17px 22px;
+  cursor: pointer;
   font-size: 12px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #507fe1;
@@ -94,6 +95,7 @@ img {
   border: none;
   background-color: #507fe1;
   color: white;
+  cursor: pointer;
   font-family: 'Proxima Nova Semibold', sans-serif;
   -webkit-box-shadow: 6px 6px 0px 0px rgba(80, 127, 225, 0.1);
   box-shadow: 6px 6px 0px 0px rgba(80, 127, 225, 0.5);
@@ -102,11 +104,13 @@ img {
 .button-fitting {
   color: #507fe1;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .button-add {
   background-color: #7c9fe8;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button-like {
@@ -115,6 +119,7 @@ img {
   border: none;
   width: 30px;
   padding-top: 7px;
+  cursor: pointer;
 }
 
 .bg-secondary {
@@ -673,6 +678,82 @@ img {
   }
   .blog-list__image {
     height: 150px;
+  }
+}
+
+.price {
+  background-color: #f1f1f1;
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-block__card {
+  margin-bottom: 20px;
+}
+
+.price-card {
+  background-color: #fff;
+  position: relative;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card__title {
+  margin: 0;
+  font-size: 15px;
+}
+
+.price-card__cost {
+  font-size: 15px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.price-card__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-card__button {
+  text-align: center;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  height: 80px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.price-card:hover .price-card__button {
+  z-index: 99;
+  bottom: -80px;
+}
+
+@media (max-width: 768px) {
+  .price__card {
+    margin-left: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

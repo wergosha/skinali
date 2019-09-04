@@ -24,6 +24,7 @@ img {
     text-transform: uppercase;
     border: 2px solid $primary;
     padding: 17px 22px;
+    cursor: pointer;
     font-size: 12px;
     @include bold;
     color: $primary;
@@ -40,6 +41,7 @@ img {
     border: none;
     background-color: $primary;
     color: white;
+    cursor: pointer;
     @include bold;
     -webkit-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
     -moz-box-shadow: 6px 6px 0px 0px rgba(80,127,225,0.1);
@@ -47,10 +49,12 @@ img {
     &-fitting {
         color: $primary;
         background-color: #fff;
+        cursor: pointer;
     }
     &-add {
         background-color: lighten($primary, 10%);
         color: #ffffff;
+        cursor: pointer;
     }
     &-like {
         background-color: $primary;
@@ -58,10 +62,9 @@ img {
         border: none;
         width: 30px;
         padding-top: 7px;
+        cursor: pointer;
     }
 }
-
-
 
 .bg-secondary {
     background-color: $bg-secondary;
