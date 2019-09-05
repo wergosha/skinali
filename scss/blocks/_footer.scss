@@ -1,0 +1,65 @@
+.footer {
+    padding: 40px 0;
+    background-color: black;
+    color: white;
+    &-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__pay-info {
+        img {
+            background-color: white; 
+            background-size: 100%;
+            margin: 15px;
+        }
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    &__title {
+        text-transform: uppercase;
+        @include bold;
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+    &__subtitle {
+        display: block;
+        margin-bottom: 48px;
+    }
+    &__copyright {
+        color:  #767676;
+    }
+    &__social {
+        &-image {
+            margin-left: 10px;
+            background-color: #fff;
+        }
+    }
+    &__contacts {
+        text-align: right;
+    }
+    &__phone {
+        display: block;
+        font-size: 15px;
+        @include bold;
+        margin-bottom: 20px;;
+    }
+    &__mail {
+        display: block;
+        margin-bottom: 20px;
+    }  
+}
+
+@media (max-width: 991px) {
+    .footer {
+        &-block {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__contacts {
+            text-align: center; 
+        }
+    }
+}
