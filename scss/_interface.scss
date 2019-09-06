@@ -21,6 +21,7 @@ img {
 }
 
 .button-o {
+    text-decoration: none;
     text-transform: uppercase;
     border: 2px solid $primary;
     padding: 17px 22px;
@@ -76,7 +77,51 @@ img {
     border: 1px solid #dddddd;
     width: 100%;
 }
-
+.select {
+    height: 80px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 9;
+        top: 30%;
+        right: 40px;
+        width: 32px;
+        height: 32px;
+        background: url('/img/offer/caret.png') no-repeat center;
+        background-size: 100%;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &_checked {
+        line-height: 80px;
+        padding-left: 30px;
+        
+    }
+    &__dropdown {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #dddddd;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        display: none;
+        &_open {
+            display: block;
+        }
+    }
+    &__option {
+        padding: 20px;
+        &:hover {
+            background-color: $bg-secondary;
+        }
+    }
+}
 .checkbox {
     display: none;
     &:checked + label:before {

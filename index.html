@@ -7,6 +7,7 @@
     <title>Фабрика скинали</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 <body>
     <header class="header">
@@ -14,12 +15,12 @@
                 <div class="container">
                    <nav class="menu__nav">
                        <a href="#" class="menu__link">главная</a>
-                       <a href="#" class="menu__link">продукция</a>
-                       <a href="#" class="menu__link">каталог</a>
-                       <a href="#" class="menu__link">примеры работ</a>
+                       <a href="#features" class="menu__link">преимущества</a>
+                       <a href="#catalog" class="menu__link">каталог</a>
+                       <a href="#catalog-all" class="menu__link">примеры работ</a>
                        <a href="#" class="menu__link">примерка изображений</a>
                        <a href="#" class="menu__link">стоимость дилерам</a>
-                       <a href="#" class="menu__link">о скинали</a>
+                       <a href="#factory" class="menu__link">о скинали</a>
                    </nav>
                 </div>
                 <!-- /.container -->
@@ -46,8 +47,8 @@
                         <a class="navbar__phone" href="tel:+74951234567">+7 495 123-45-67</a>
                         <a class="navbar__email navbar__small-text" href="mailto:info@mail.ru">info@mail.ru</a>
                     </div>
-                    <button class="button-o navbar__button">Получить консультацию
-                    </button>
+                    <a href="#offer" class="button-o navbar__button">Получить консультацию
+                    </a>
                 </div>
             </div>
             <!-- /.container -->
@@ -66,7 +67,7 @@
     </header>
     <!-- /.header --> 
     <main>
-        <section class="offer bg-secondary">
+        <section class="offer bg-secondary" id="offer">
             <div class="container">
                 <div class="offer__block offer-block offer-block_calc-bg">
                     <h2 class="offer__title">Оставьте заявку на расчет</h2>
@@ -75,15 +76,24 @@
                         <div class="form__row">
                             <div class="form__group">
                                 <label for="" class="form__label">Вид стекла</label>
-                                <input type="text" class="input form__input">
+                                <input type="hidden" name="type" id="select-type" value="Без печати">
+                                <div class="select form__select">
+                                    <div class="select_checked">Без печати</div>
+                                    <ul class="select__dropdown select__dropdown-open">
+                                        <li class="select__option" data-value="Без печати">Без печати</li>
+                                        <li class="select__option" data-value="С обычной печатью">С обычной печатью</li>
+                                        <li class="select__option" data-value="Флексография">Флексография</li>
+                                        <li class="select__option" data-value="Цифровая печать">Цифровая печать</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form__group">
                                 <label for="" class="form__label">Ширина, см</label>
-                                <input type="text" class="input form__input">
+                                <input type="number" class="input form__input">
                             </div>
                             <div class="form__group">
                                 <label for="" class="form__label">Высота, см</label>
-                                <input type="text" class="input form__input">
+                                <input type="number" class="input form__input">
                             </div>
                         </div>
                         <div class="form__row form__row-checkbox">
@@ -117,7 +127,7 @@
             </div>
             <!-- /.container -->
         </section>
-        <section class="features section">
+        <section class="features section" id="features">
             <div class="container">
                 <h2 class="section-title section__title">Наши преимущества</h2>
                 <div class="features-block">
@@ -163,16 +173,16 @@
             <!-- /.container -->
         </section>
         <!-- /.features section -->
-        <section class="section catalog">
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section-title section__title">Каталог скинали</h2>
                 <div class="catalog-block">
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-1.jpg" alt=""><span class="catalog-card catalog__card__tag">Пейзаж</span> <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-1.jpg" alt=""><span class="catalog-card__tag">Пейзаж</span> <!-- /.catalog-card catalog__card__tag -->
+                        <div class="catalog-card__buttons">
+                            <button class="button-fitting catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -181,26 +191,13 @@
                     </div>
                     <!-- /.catalog-card catalog__card -->
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-2.jpg" alt=""><span class="catalog-card catalog__card__tag">Пейзаж</span> <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
-                            <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
-                            <!-- /.button-add catalog-card catalog__card__button -->
-                            <button class="button-like"><img src="img/like.png" alt=""></button>
-                            <!-- /.button-like -->
-                        </div>
-                        <!-- /.catalog-card catalog__card__buttons -->
-                    </div>
-                    <!-- /.catalog-card catalog__card -->
-                    <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-3.jpg" alt="">
-                        <span class="catalog-card catalog__card__tag">Пейзаж</span> 
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-2.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span> 
                         <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -209,13 +206,13 @@
                     </div>
                     <!-- /.catalog-card catalog__card -->
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-4.jpg" alt="">
-                        <span class="catalog-card catalog__card__tag">Пейзаж</span>
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-3.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span> 
                         <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -224,13 +221,13 @@
                     </div>
                     <!-- /.catalog-card catalog__card -->
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-5.jpg" alt="">
-                        <span class="catalog-card catalog__card__tag">Пейзаж</span> 
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-4.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span>
                         <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -239,13 +236,13 @@
                     </div>
                     <!-- /.catalog-card catalog__card -->
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-6.jpg" alt="">
-                        <span class="catalog-card catalog__card__tag">Пейзаж</span> 
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-5.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span> 
                         <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -254,13 +251,13 @@
                     </div>
                     <!-- /.catalog-card catalog__card -->
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-7.jpg" alt="">
-                        <span class="catalog-card catalog__card__tag">Пейзаж</span> 
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-6.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span> 
                         <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -269,13 +266,28 @@
                     </div>
                     <!-- /.catalog-card catalog__card -->
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card catalog__card__image" src="img/catalog/catalog-8.jpg" alt="">
-                        <span class="catalog-card catalog__card__tag">Пейзаж</span> 
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-7.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span> 
                         <!-- /.catalog-card catalog__card__tag -->
-                        <div class="catalog-card catalog__card__buttons">
-                            <button class="button-fitting catalog-card catalog__card__button">Примерить онлайн</button>
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
                             <!-- /.button-fitting catalog-card catalog__card__button -->
-                            <button class="button-add catalog-card catalog__card__button">Заказать</button>
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
+                            <!-- /.button-add catalog-card catalog__card__button -->
+                            <button class="button-like"><img src="img/like.png" alt=""></button>
+                            <!-- /.button-like -->
+                        </div>
+                        <!-- /.catalog-card catalog__card__buttons -->
+                    </div>
+                    <!-- /.catalog-card catalog__card -->
+                    <div class="catalog-card catalog__card">
+                        <img class="catalog-card catalog-card__image" src="img/catalog/catalog-8.jpg" alt="">
+                        <span class="catalog-card catalog-card__tag">Пейзаж</span> 
+                        <!-- /.catalog-card catalog__card__tag -->
+                        <div class="catalog-card catalog-card__buttons">
+                            <button class="button-fitting catalog-card catalog-card__button">Примерить онлайн</button>
+                            <!-- /.button-fitting catalog-card catalog__card__button -->
+                            <button class="button-add catalog-card catalog-card__button">Заказать</button>
                             <!-- /.button-add catalog-card catalog__card__button -->
                             <button class="button-like"><img src="img/like.png" alt=""></button>
                             <!-- /.button-like -->
@@ -286,7 +298,7 @@
                 </div>
                 <!-- /.catalog-block -->
                 <div class="catalog-link">
-                    <a href="#" class="button catalog__link-more button_lg">Смотреть весь каталог скинали</a>
+                    <a href="#" class="button catalog__link-more button_lg" id="catalog-all">Смотреть весь каталог скинали</a>
                     <span class="catalog__description">Более 3000 изображений скинали в 25 рубриках</span>
                 </div>
             </div>
@@ -497,12 +509,52 @@
             <!-- /.container -->
         </section>
         <!-- /.section steps -->
+        <section class="section before">
+            <div class="container">
+                <h2 class="section-title section__title">До и после</h2>
+                <!-- /.section-title section__title -->
+                <div class="before-slider-wrap">
+                    <div class="before-slider">
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-slider/sample-before.png" alt="">
+                                <img src="img/before-slider/sample-after.png" alt="">
+                            </div>
+                        </div>
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-slider/sample-before.png" alt="">
+                                <img src="img/before-slider/sample-after.png" alt="">
+                            </div>
+                        </div>
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-slider/sample-before.png" alt="">
+                                <img src="img/before-slider/sample-after.png" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    <div class="before-slider-arrows">
+                        <button class="arrow arrow-left">
+                            <img src="img/before-slider/left.png" alt="">
+                        </button>
+                        <button class="arrow arrow-right">
+                            <img src="img/before-slider/right.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!-- /.before-slider-wrap -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section before -->
         <div class="section reviews">
             <div class="container">
                 <h2 class="section-title section__title">Отзывы наших клиентов</h2>
                 <!-- /.section-title section__title -->
                 <div class="reviews-slider">
                     <div class="reviews-slider__item">
+                        
                         <div class="reviews-slider__text">
                             Очень часто мы сталкивались с недопониманием со стороны сотрудников банка, и иной раз идти не хочется. В очередной раз "навешают лапши на уши" и культурно пошлют...
                         </div>
@@ -531,6 +583,7 @@
                         <span class="reviews-slider__name">Екатерина Иванова<br>Москва</span> 
                         <!-- /.reviews-slider__name -->
                     </div>
+                
                     <!-- /.reviews-slider__item -->
                 </div>
                 <!-- /.reviews-slider -->
@@ -549,7 +602,7 @@
                                 <input type="text" class="input form__input" placeholder="Ваше имя">
                             </div>
                             <div class="form__group">
-                                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                                <input type="tel" class="input form__input" placeholder="Ваш телефон">
                             </div>
                             <div class="form__group">
                                 <input type="text" class="input form__input" placeholder="Ваша цена">
@@ -569,7 +622,7 @@
             </div>
             <!-- /.container -->
         </section>
-        <div class="section factory">
+        <div class="section factory" id="factory">
             <div class="container">
                 <h2 class="section-title section__title">О производстве</h2>
                 <!-- /.section-title section__title -->
@@ -685,5 +738,11 @@
     </footer>
     <!-- /.footer -->
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=1609"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>
