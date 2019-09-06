@@ -36,3 +36,14 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+    .reviews {
+        &-slider {
+            flex-direction: column;
+            &__item {
+                margin: 0 auto 40px auto;
+            }
+        }
+    }
+}
