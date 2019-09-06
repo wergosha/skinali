@@ -362,12 +362,21 @@ img {
   color: #7b7b79;
 }
 
+@media (max-width: 1199px) {
+  .menu__link {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar__mobile {
     display: none;
   }
   .navbar__landline {
     display: none;
+  }
+  .menu__link {
+    font-size: 12px;
   }
 }
 

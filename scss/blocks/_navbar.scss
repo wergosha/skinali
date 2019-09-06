@@ -99,7 +99,13 @@
 
     }
 }
-
+@media (max-width: 1199px) {
+    .menu {
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
 @media (max-width: 991px) {
     .navbar {
         &__mobile {
@@ -109,7 +115,13 @@
             display: none;
         }
     }
+    .menu {
+        &__link {
+            font-size: 12px;
+        }
+    }
 }
+
 
 @media (max-width: 576px) {
     .logo {
