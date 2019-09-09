@@ -9,6 +9,7 @@ $(window).load(function() {
         dotaClass: 'before-slider__dots',
         prevArrow: $('.arrow-left'),
         nextArrow: $('.arrow-right'),
+        swipe:false,
     });
     $('.menu-button').on('click', function(){
         $('.menu').toggleClass('menu_active')

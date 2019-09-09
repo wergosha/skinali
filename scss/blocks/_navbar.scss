@@ -122,8 +122,15 @@
     }
 }
 
+@media (max-width: 840px) {
+    .menu {
+        &__link {
+            font-size: 10px;
+        }
+    }
+}
 
-@media (max-width: 576px) {
+@media (max-width: 786px) {
     .logo {
        display: none;
     }   
@@ -137,6 +144,7 @@
         }
         &__link {
             margin-bottom: 20px;
+            font-size: 15px;
         }
     }
 }

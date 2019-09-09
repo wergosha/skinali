@@ -59,3 +59,14 @@
         transform: translateX(120%);
     }
 }
+
+@media (max-width: 500px) {
+    .arrow {
+        &-left {
+            display: none !important;
+        }
+        &-right {
+            display: none !important;
+        }
+    }
+}

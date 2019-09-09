@@ -14,3 +14,16 @@
         
     }
 }
+
+@media (max-width: 991px) {
+    .factory {
+        &-block {
+            &__text {
+                flex-basis: 100%;
+                margin-top: 20px;
+                margin-left: 0;
+                font-size: 18px;
+            }
+        }
+    }
+}
